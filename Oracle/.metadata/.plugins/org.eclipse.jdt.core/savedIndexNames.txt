@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+C:\Users\bitcamp\Desktop\NCamp\Oracle\.metadata\.plugins\org.eclipse.jdt.core
+826615717.index
+1865797976.index
+4038431948.index
+2855249044.index
+2088913420.index
+1948593472.index
