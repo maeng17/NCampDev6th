@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Chapter01.XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample02{MessageBean.java[MessageBean" modifiers="513" timestamp="1709523418948"/>
+    <typeInfo handle="=Chapter01.XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample04{Calc.java[Calc" modifiers="513" timestamp="1709537146735"/>
+    <typeInfo handle="=Chapter01.XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample05{SungJuk.java[SungJuk" modifiers="513" timestamp="1709599771073"/>
+    <typeInfo handle="=Chapter02_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample01{MessageBean.java[MessageBean" modifiers="513" timestamp="1709602571260"/>
+    <typeInfo handle="=Chapter02_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample02{Calc.java[Calc" modifiers="513" timestamp="1709607434055"/>
+    <typeInfo handle="=Chapter02_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample03{SungJuk.java[SungJuk" modifiers="513" timestamp="1709615458290"/>
+    <typeInfo handle="=Chapter02_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample04{SungJuk.java[SungJuk" modifiers="513" timestamp="1709626948967"/>
+    <typeInfo handle="=Chapter02_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample05{MessageBean.java[MessageBean" modifiers="513" timestamp="1709705850321"/>
+    <typeInfo handle="=Chapter02_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample05{Outputter.java[Outputter" modifiers="513" timestamp="1709705897173"/>
+    <typeInfo handle="=Chapter03_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;sample01{MessageBean.java[MessageBean" modifiers="513" timestamp="1709774630824"/>
+    <typeInfo handle="=Chapter04_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;user.dao{UserDAO.java[UserDAO" modifiers="513" timestamp="1709800852659"/>
+    <typeInfo handle="=Chapter04_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;user.service{UserService.java[UserService" modifiers="513" timestamp="1709783093993"/>
+    <typeInfo handle="=Chapter05_XML/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;user.dao{UserDAO.java[UserDAO" modifiers="513" timestamp="1709800852659"/>
+    <typeInfo handle="=Chapter06_Web/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;user.dao{UserDAO.java[UserDAO" modifiers="513" timestamp="1711086316373"/>
+    <typeInfo handle="=Chapter06_Web/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;user.service{UserUploadService.java[UserUploadService" modifiers="513" timestamp="1711332904460"/>
+    <typeInfo handle="=Chapter06_Web/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;user.dao{UserUploadDAO.java[UserUploadDAO" modifiers="513" timestamp="1711332945738"/>
+</typeInfoHistroy>
