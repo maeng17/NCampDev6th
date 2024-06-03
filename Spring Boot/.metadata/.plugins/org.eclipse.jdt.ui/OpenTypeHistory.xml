@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Chapter02MySQL/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;user.service{UserService.java[UserService" modifiers="513" timestamp="1715049308982"/>
+    <typeInfo handle="=Chapter03JPA/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.example.demo{BoardService.java[BoardService" modifiers="513" timestamp="1715065020272"/>
+    <typeInfo handle="=SpringBootJPAReact/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;user.service{UserUploadService.java[UserUploadService" modifiers="513" timestamp="1715655758521"/>
+</typeInfoHistroy>
