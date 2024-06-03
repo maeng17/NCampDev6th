@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="userSQL">
+  	 <resultMap type="user.bean.UserDTO" id="userResult">
+  	 	<result column="NAME" property="name"/>
+  	 	<result column="ID" property="id"/>
+  	 	<result column="PWD" property="pwd"/>
+  	 </resultMap>
+  	 
+     <insert id="write" parameterType="user">
+        insert into usertable values(#{name},#{id},#{pwd})
+     </insert>
+     
+     <select id="getUserList" resultMap="userResult">
+     	select * from usertable
+     </select>
+     <!-- 
+     	DB의 꺼내온 데이터의 1줄을 UserDTO에 담아주새요..
+		그러면 자동으로 List에 담아준다. 
+		
+		DB의 컬럼명과 똑같은 이름의 UserDTO 필드를 찾아서 매핑  
+	 -->
+     <select id="getUser" parameterType="String" resultType="user">
+     	select * from usertable where id=#{id}
+     </select>
+     
+     <update id="update" parameterType="user">
+     	update usertable set name=#{name}, pwd=#{pwd} where id=#{id}
+     </update>
+     
+     <delete id="delete" parameterType="String">
+     	delete usertable where id=#{id}
+     </delete>
+     
+     <select id="search"  resultMap="userResult">
+     	select * from usertable where name like '%' || #{name} ||'%' or id like '%' || #{id} || '%'
+     </select>
+     
+     <select id="search1" parameterType="java.util.Map" resultType="user">
+     	<!-- select * from usertable where
+     	<if test="columnName == 'name'">
+     		name like '%' || #{value} ||'%'
+     	</if>
+     	<if test="columnName == 'id'">
+     		id like '%' || #{value} ||'%'
+     	</if> -->
+     	
+     	<!-- select * from usertable where
+     	<choose>
+     		<when test="columnName == 'name'">
+     			name like '%' || #{value} ||'%'
+     		</when>
+     		<otherwise>
+     			id like '%' || #{value} ||'%'
+     		</otherwise>
+     	</choose> -->
+     	
+     	select * from usertable where ${columnName} like '%' || #{value} ||'%'
+     </select>
+  </mapper>

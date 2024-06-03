@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onmouseover="showResult()" onmouseout="hideResult()" style="border: 1px solid red;">
+        10 + 50 = <span id="question">?</span>
+    </h1>
+    <p>결과를 보시려면 수식 위에 마우스를 올리세요.</p>
+
+    <script>
+        //마우스가 올라오면 <h1>태그 올라오묜 결과를 빨강으로 나오게 하고
+        //마우스가 <h1>태그에서 내려오면 다시 검정색 ? 으로 표시
+        function sum(x,y) {
+            return x + y; 
+        }
+
+        function showResult() {
+            var result = sum(10, 50);
+            var myTag = document.getElementById("question");
+            myTag.innerHTML = "<font color = 'red'>" + result + "</font>";
+        }
+
+        function hideResult() {
+            document.getElementById("question").innerHTML = "?";
+        }
+    </script>
+</body>
+</html>

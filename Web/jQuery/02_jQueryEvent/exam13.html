@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/event.css">
+</head>
+<body>
+    <h1>this의 사용</h1>
+    <div id="input">
+        <h2>단독 개체의 확인</h2>
+        <div id="singleButton">클릭하세요.</div>
+
+        <h2>복수 개체의 확인</h2>
+        <div>
+            <button class="multiButton">클릭하세요</button>
+            <button class="multiButton">클릭하세요</button>
+            <button class="multiButton">클릭하세요</button>
+            <button class="multiButton">클릭하세요</button>
+        </div>
+    </div>
+
+    <script src="http://code.jQuery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+           $('#singleButton').click(function(){
+                //$('#singleButton').html('감사합니다.');
+                $(this).html('감사합니다.'); //$(this)- 클릭한 자기 자신을 의미
+           });
+
+           $('.multiButton').click(function(){
+                //$('.multiButton').html('감사합니다'); //모두 바뀐다.
+                $(this).html('감사합니다');  //클릭한 class만 바뀐다
+
+                var index = $(this).index();
+                var result = index + '번쩨 요소를 선택';
+                $(this).html(result);
+           });
+        });
+    </script>
+</body>
+</html>
+
+<!--
+    만약에 class 속성이 아니라 id속성 이라면 첫번째 id의 태그만 이벤트 적용된다.
+        <button id="multiButton">클릭하세요</button> -> 얘만 '감사합니다'로 바뀜
+        <button id="multiButton">클릭하세요</button>
+        <button id="multiButton">클릭하세요</button>
+        <button id="multiButton">클릭하세요</button>
+-->

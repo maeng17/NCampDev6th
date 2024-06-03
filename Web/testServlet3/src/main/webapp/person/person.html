@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#nDiv { font-size: 8pt; color: red; }
+</style>
+</head>
+<body>
+	<form name="personForm" method="get" action="http://localhost:8080/testServlet3/PersonServlet">
+		<table border="1" cellpadding="5" cellspacing="0">
+	            <tr>
+	                <td>이름</td>
+	                <td>
+	                    <input type="text"  name="name" id="name" placeholder="이름 입력"/>
+	                    <div id="nDiv"></div>
+	                </td>
+	            </tr>
+	    
+	            <tr>
+	                <td>성별</td>
+	                <td>
+	                    <fieldset>
+	                        <legend>성별</legend>
+	                        <div>
+	                            <input type="radio" name="gender" id="gender_m" value="0"/>
+	                            <label for="gender_m">남자</label>
+	                            <input type="radio" name="gender" id="gender_f" value="1"/>
+	                            <label for="gender_f">여자</label>
+	                        </div>
+	                    </fieldset>
+	                </td>
+	            </tr>
+	    
+	            <tr>
+	                <td>색깔</td>
+	                <td> 
+	                    <div>
+	                        <select name="color" id="color" >
+	                            <option value="빨강" id="빨강">빨강</option>
+	                            <option value="초록">초록</option>
+	                            <option value="파랑">파랑</option>
+	                            <option value="보라">보라</option>
+	                            <option value="하늘">하늘</option>
+	                        </select>
+	                    </div>
+	                </td>
+	            </tr>
+	    
+	            <tr>
+	                <td>취미</td>
+	                <td>
+	                    <div>
+	                        <input type="checkbox" name="hobby" id="hobby1" value="독서" />
+	                        <label for="hobby1">독서</label>
+	                        <input type="checkbox" name="hobby" id="hobby2" value="영화" />
+	                        <label for="hobby2">영화</label>
+	                        <input type="checkbox" name="hobby" id="hobby3" value="음악" />
+	                        <label for="hobby3">음악</label>
+	                        <input type="checkbox" name="hobby" id="hobby4" value="게임" />
+	                        <label for="hobby4">게임</label>
+	                        <input type="checkbox" name="hobby" id="hobby5" value="쇼핑" />
+	                        <label for="hobby5">쇼핑</label>
+	                    </div>
+	                </td>
+	            </tr>
+	    
+	            <tr>
+	                <td>과목</td>
+	                <td>
+	                    <select name="subject" id="subject" multiple size="5">
+	                        <option value="Java">Java</option>
+	                        <option value="Servlet">Servlet</option>
+	                        <option value="JSP">JSP</option>
+	                        <option value="Spring">Spring</option>
+	                    </select>
+	                </td>
+	            </tr>
+	    
+	            <td colspan="2" align="center">
+	                <div>
+	                    <input type="button" value="SEND" onclick="javascript:checkInput()" />
+	                    <input type="reset" value="CANCEL" />
+	                </div>
+	            </td> 
+	        </table>      
+	</form> 
+	
+	<script type="text/javascript">
+	function checkInput() {
+		document.getElementById("nDiv").innerHTML = ""
+		
+		if(document.personForm.name.value == "") 
+			document.getElementById("nDiv").innerHTML = "이름을 입력하시오"
+
+		else document.personForm.submit();
+	}
+	</script>       
+</body>
+</html>
