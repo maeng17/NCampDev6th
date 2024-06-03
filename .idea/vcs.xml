@@ -2,7 +2,15 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Spring Boot/SpringBootJPAReact" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Spring Boot/SpringBootNCPGradle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Spring/NCPTestMaven" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Spring/SpringNCPMaven" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace/day02" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace/day03" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace/day05" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace/day06" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace/day07" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace/day08" vcs="Git" />
   </component>
 </project>

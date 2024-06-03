@@ -1,0 +1,9 @@
+.header {display: flex; justify-content: center; padding: 10px; }
+.header img { width: 50px; height: 50px; padding-right: 15px;}
+.header {text-align: center; }
+
+.projectnav {width: 100%; background: lightgray; padding: 1px 0;}
+.projectnav ul {display: flex; justify-content: center;}
+.projectnav ul li {margin-right: 30px; list-style-type: none;}
+.projectnav ul li a {transition: 0.3s; color: rgb(211, 75, 75); text-decoration: none;}
+.projectnav ul li a:hover {color: white;}
